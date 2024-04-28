@@ -38,6 +38,7 @@ public class DVDService implements Service {
     public void displayAll(){
         System.out.println("Displaying all dvds");
         for (int i = 0; i < count ; i++) {
+            if(dvds[i] == null) continue;
             System.out.println(dvds[i]);
 
         }

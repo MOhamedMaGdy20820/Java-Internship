@@ -39,6 +39,7 @@ public class magazineService implements Service {
     public void displayAll(){
         System.out.println("Displaying all magazines");
         for (int i = 0; i < count ; i++) {
+            if(magazines[i] == null) continue;
             System.out.println(magazines[i]);
         }
     }

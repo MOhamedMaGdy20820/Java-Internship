@@ -43,6 +43,7 @@ public class bookService implements Service {
     public void displayAll(){
         System.out.println("Displaying all books");
         for (int i = 0; i < count ; i++) {
+            if(books[i] == null) continue;
             System.out.println(books[i]);
         }
     }
