@@ -6,10 +6,10 @@ public class JavaIO {
     
      public static void main(String[] args) {
         int Counter = 0; 
-        try (BufferedReader br = new BufferedReader
+        try (BufferedReader reader = new BufferedReader
                 (new FileReader("D:\\02.me\\git files\\Java-Internship\\04.Exceptions\\JavaIO.txt"))) {
             String line;
-            while ((line = br.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 String[] words = line.split("\\s+");
                 Counter += words.length;
             }
