@@ -19,6 +19,4 @@ public class JavaIO {
 
         System.out.println("The number of words = " + Counter);
     }
-
-    
 }
