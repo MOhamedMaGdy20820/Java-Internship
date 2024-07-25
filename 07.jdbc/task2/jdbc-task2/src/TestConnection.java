@@ -123,7 +123,7 @@ public class TestConnection {
 		try (Statement stmt = conn.createStatement()) {
 			conn.setAutoCommit(false);
 
-			// You can set a variety of SQL tags to all and all can be batched by the database
+			// It groups multiple SQL queries together so that they can all be executed at once by the database
 			stmt.addBatch(updateVacationSQL);
 			stmt.addBatch(updateTitleSQL);
 
