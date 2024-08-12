@@ -18,8 +18,7 @@ public class task2  extends HttpServlet {
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
-		resp.setContentType("text/html");
+
         PrintWriter out = resp.getWriter();
         
         String dobStr = req.getParameter("dob");
