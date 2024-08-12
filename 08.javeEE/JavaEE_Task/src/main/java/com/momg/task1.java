@@ -17,8 +17,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet("/")
-public class task extends HttpServlet {
+@WebServlet("/task1")
+public class task1 extends HttpServlet {
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
