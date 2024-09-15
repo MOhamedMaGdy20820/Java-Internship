@@ -21,7 +21,6 @@ public class WaitingListService {
 
 
     private final WaitingListRepository waitingListRepository;
-
     private final MailService mailService;
     private final InstructorService instructorService;
     private final CourseService courseService;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	  
+	  <!--Required meta tags-->
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no ">
+
+	  <!-- Bootstrap CSS -->
+	  <link  href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">	
+	
+		<title>save Product</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<h3>Product directory</h3>
+			<hr>
+			<p class = "h4 mb-4">save Product</p>
+			
+			<form action="#" th:action="@{/Products/save}"
+							 th:object="${Product}" method="POST"	>
+							 
+				<!-- Add hidden form field to handle update -->
+				<input type="hidden" th:field="*{id}"/>
+							 
+							 
+							 
+							 <!--  * ==  Product.   -->
+				<input type="text" th:field="*{name}"
+				  		class ="form-control mb-4 col-4" placeholder="name">
+				  		
+				 <input type="text" th:field="*{brand}"
+				  		class ="form-control mb-4 col-4" placeholder="brand">
+				  
+				  <input type="text" th:field="*{category}"
+				  		class ="form-control mb-4 col-4" placeholder="category">
+				  
+				   <input type="text" th:field="*{price}"
+				  		class ="form-control mb-4 col-4" placeholder="price">
+				  		
+				  <button type="submit" class="btn btn-info col-2">Save</button>
+			</form>
+			
+			<hr>
+			<a th:href="@{/Products/list}">Back to products List</a>
+		</div>
+		
+		
+		
+		
+	</body>
+	
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
